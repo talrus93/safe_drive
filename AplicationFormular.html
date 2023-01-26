@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safe Drive</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body class="formular_style">
+<header>
+    <img class="logo" src="6icon.png" alt="logo">
+    <ul class="navbar">
+        <li><a href = "dotaznik.html">"Dotazník"</a></li>
+        <li><a  href = "dokumenty.html">"Dokumenty"</a></li>
+        <li><a href = "tim.html">"Tím"</a></li>
+        <li><a href = "AplicationFormular.html">"Safe Drive"</a></li>
+        <li><a href = "index.html">"O Projekte"</a></li>
+        <li><a href = "index.html">"Domov"</a></li> 
+    </ul>  
+</header> 
+
+<div class="main-container">
+<div class="container">
+    <div class="title"> Safe drive</div>
+    <form method="post" action="Aplication.php">
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details"> How much do you exceed the speed limit?</span>
+                <input type="text" placeholder="Enter the speed" required="required">
+            </div>
+            <div class="input-box">
+                <span class="details">Which month?</span>
+                <select name="Mon" id="Mon">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                    </select><br>
+            </div>
+
+            <div class="input-box">
+                <span class="details"> Which Day?</span>
+                <select name="Day" id="Day">
+                    <option value="0">Sunday</option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                    </select><br>
+            </div>
+
+            <div class="input-box">
+                <span class="details"> Time of day?</span>
+                <select name="Time" id="Time">
+                    <option value="0">Midnight - 3 a.m.</option>
+                    <option value="1">3 a.m. - 6 a.m.</option>
+                    <option value="2"> a.m. - 9 a.m.</option>
+                    <option value="3">9 a.m. - noon</option>
+                    <option value="4">Noon - 3 p.m.</option>
+                    <option value="5">3 p.m. - 6 p.m.</option>
+                    <option value="6">6 p.m. - 9 p.m.</option>
+                    <option value="7">9 p.m. - midnight</option>
+                    </select><br>
+            </div>
+        </div>
+
+        <div class="gender-details">
+            
+        <span class="gender-title">Is there any alcohol in the blood?</span>
+        <div class="category_drive">
+        <input type="radio" name="Alc"
+        value="0" required="required"  class="radio-button">Yes
+        <input type="radio" name="Alc"
+        value="1" required="required" class="radio-button">No <br>
+    </div>
+    </div>
+
+        <div class="gender-details">
+        <span class="gender-title">Do you write messages when you drive a car?</span>
+        <div class="category_drive">
+        <input type="radio" name="TXT"
+        value="0" required="required"  class="radio-button">Yes
+        <input type="radio" name="TXT"
+        value="1" required="required"  class="radio-button">No <br>
+    </div>
+    </div>
+
+        <div class="gender-details">
+        <span class="gender-title">Do you drive aggressively or do you obey all the rules of the road?</span>
+        <div class="category_drive">
+        <input type="radio" name="RD"
+        value="0" required="required"  class="radio-button">I drive aggressively   
+        <input type="radio" name="RD"
+        value="1" required="required"  class="radio-button">I obey rules and drive calmly<br>   
+    </div>
+    </div>
+
+    <div class="gender-details">
+        <span class="gender-title">Do you wear seat belts?</span>
+        <div class="category_drive">
+        <input type="radio" name="Seat"
+        value="0" required="required"  class="radio-button">Yes
+        <input type="radio" name="Seat"
+        value="1" required="required"  class="radio-button">No <br>
+    </div>
+    </div>
+
+    <div class="gender-details">
+        <span class="gender-title">How many passengers do you have?</span>
+        <div class="category_drive">
+        <input type="radio" name="Pass"
+        value="0" required="required"  class="radio-button">0
+        <input type="radio" name="Pass"
+        value="1" required="required"  class="radio-button">1 
+        <input type="radio" name="Pass"
+        value="2" required="required"  class="radio-button">2 
+        <input type="radio" name="Pass"
+        value="3" required="required"  class="radio-button">3 
+        <input type="radio" name="Pass"
+        value="4" required="required"  class="radio-button">4 <br>
+    </div>
+    </div>
+    
+
+
+    <div class="gender-details">
+        <span class="gender-title"> Good weather?</span>
+        <div class="category_drive">
+        <input type="radio" name="Weat"
+        value="0" required="required"  class="radio-button">Yes
+        <input type="radio" name="Weat"
+        value="1" required="required"  class="radio-button">No <br>
+    </div>
+    </div>
+
+    <div class="gender-details">
+        <span class="gender-title"> Age?</span>
+        <div class="category_drive">
+        <input type="radio" name="Age"
+        value="0" required="required"  class="radio-button">Over 20 years old
+        <input type="radio" name="Age"
+        value="1" required="required"  class="radio-button">Teens ages 15 - 19 <br>
+    </div>
+    </div>
+
+
+    <div class="gender-details">
+        <span class="gender-title"> Gender?</span>
+        <div class="category_drive">
+        <input type="radio" name="Gend"
+        value="0" required="required"  class="radio-button">Man
+        <input type="radio" name="Gend"
+        value="1" required="required"  class="radio-button">Woman <br>
+    </div>
+    </div> 
+
+    
+    <div class="button">
+    <input type="hidden" name="odoslane" value="1">
+     <button type="submit">Submit</button>
+    </div>
+    
+
+
+    </form>
+</div>
+</div>
+    </body>
+    </html>

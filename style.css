@@ -1,0 +1,642 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body.home_page {
+ background: linear-gradient(135deg, #71b7e6,#9b59b6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.panel {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.panel__wrapper {
+  padding: 7vh 7vw;
+  perspective: 1000px;
+}
+
+.panel__content--active {
+  transform: none;
+  opacity: 1;
+}
+
+.panel__headline {
+  color: white;
+  font-weight: 700;
+  opacity: 1;
+  font-size: 48px;
+  margin: 0 0 25px 0;
+}
+
+.panel p {
+  margin: 0 0 25px 0;
+  color: white;
+  font-size: 24px;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.panel p:last-child {
+  margin-bottom: 0;
+}
+
+.panel__block {
+  height: 3px;
+  background: rgba(255, 255, 255, 1);
+  margin: 0 0 25px 0;
+}
+
+.panel__blockk {
+  height: 3px;
+  background: rgba(13, 39, 71, 1);
+  margin: 0 0 25px 0;
+}
+
+@media (max-width: 640px) {
+  .panel__headline {
+    font-size: 36px;
+  }
+
+  .panel__wrapper {
+    padding: 10vh 10vw;
+  }
+
+  .panel p {
+    font-size: 16px;
+  }
+}
+
+.b-darkblue {
+  background: linear-gradient(135deg, #71b7e6,#9b59b6);
+
+}
+
+table.about {
+  border-spacing: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* styles for viewports with a width less than 600 pixels */
+  table.about {
+    width: 100%; /* set the table width to 100% of the viewport width */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* styles for viewports with a width between 601 and 900 pixels */
+  table.about {
+    width: 80%; /* set the table width to 80% of the viewport width */
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  /* styles for viewports with a width greater than 901 pixels */
+  table.about {
+    width: 60%; /* set the table width to 60% of the viewport width */
+  }
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #03252baf;
+  background-attachment: fixed;
+  padding: 6px 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo {
+  float: left;
+  width: 50px;
+  height: 45px;
+  margin-right: auto;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: rgb(221, 212, 212);
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar li a:hover {
+  background-color: rgb(140, 158, 170);
+}
+
+body.home_page h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 100px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+body.home_page h5 {
+  margin-bottom: 40px;
+}
+
+a {
+  color: white;
+}
+
+
+
+
+
+
+body.doc_style {
+  background: linear-gradient(135deg, #71b7e6,#9b59b6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.doc_style h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+  color: rgb(214, 214, 214);
+}
+
+/*body.formular_style {
+  background: linear-gradient(135deg, #71b7e6,#9b59b6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  line-height: 1.5;
+}
+
+body.formular_style h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+  color: rgb(214, 214, 214);
+}
+
+
+
+body.formular_style button {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  margin: auto;
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+
+  font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out, opacity .05s ease-in-out;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+
+}*/
+
+.panel p {
+  margin: 0 0 25px 0;
+  color: white;
+  font-size: 24px;
+  max-width: 800px;
+  text-align: justify;
+}
+
+body.tim{
+  background: linear-gradient(135deg, #71b7e6,#9b59b6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+body.tim p {
+  margin: 0 0 25px 0;
+  color: white;
+  font-size: 18px;
+  max-width: 800px;
+  text-align: justify;  
+}
+
+body.tim h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+  color: rgb(214, 214, 214);
+}
+
+body.tim imageR{
+margin-right: 25px; 
+}
+
+body.tim table.about {
+  margin: 0 auto;
+  width: 80%;
+}
+
+body.tim td.td {
+  width: 20%;
+}
+
+body.dotaznik {
+  background: linear-gradient(135deg, #71b7e6,#9b59b6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+
+
+body.dotaznik.radio-inline {
+  margin: 0px 40px 20px 0px;
+  cursor: pointer;
+}
+
+body.dotaznik label{
+  color: rgb(255, 255, 255);
+}
+
+body.dotaznik .text_input{
+  height:40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 14px;
+  border:none;
+  width:100%;
+  color:#000;
+}
+
+body.dotaznik #message {
+  outline: none;
+  border:none;
+  padding: 10px 0px 0px 15px;
+  font-size: 16px;
+  color: #000;
+  width:100%;
+
+}
+
+body.dotaznik textarea{
+overflow:auto;
+resize:vertical;
+width:352px;
+height:52px;
+}
+
+body.application, html.application {
+  height: 100%;
+}
+
+body.application{
+  background: linear-gradient(135deg, #71b7e6,#9b59b6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;    
+}
+
+.result_drive{
+position:relative;
+width:100%;
+}
+
+.result_drive img{
+width: 20%;
+height:auto;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 10%;
+}
+
+
+
+   .overlay {
+    /* Set the text to be positioned in the middle of the image */
+    display:flex;
+    margin-top: -23%;
+    text-align:center;
+    margin-left: 40%;
+    color: white;
+    font-size: 2vw;
+ }
+
+.overlay_1 {
+    /* Set the text to be positioned in the middle of the image */
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-26%,440%);
+    color: white;
+    font-size: 2vw;
+
+ }
+
+body.dotaznik .btn, .btn-primary{
+width:27%;
+position:absolute;
+left:38%;
+top:47%;
+transform:translate(-61.5%,810%);
+margin-top:-3.5%;
+}
+
+
+body.about{
+  background: linear-gradient(135deg, #71b7e6,#9b59b6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+body.formular_style .main-container{
+display: flex;
+height:100%;
+justify-content:center;
+align-items:center;
+padding:10px;
+background:linear-gradient(135deg, #71b7e6,#9b59b6);
+}
+
+body.formular_style  .container{
+  margin-top: 30px;
+  max-width:40%;
+  width:100%;
+  background:#fff;
+  padding: 25px 30px;
+  border-radius: 5px;  
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+body.formular_style  .container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+body.formular_style  .container .title::before{
+  content: '';
+  position:absolute;
+  height:3px;
+  left:0;
+  bottom:0;
+  width:30px;
+  border-radius: 5px;
+  background:linear-gradient(135deg, #71b7e6,#9b59b6);
+}
+
+body.formular_style .container form .user-details{
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+body.formular_style form .user-details .input-box {  
+  margin-bottom: 15px;
+  margin: 20px 0 12px 0;
+  width:30vw;
+}
+
+body.formular_style .user-details span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+body.formular_style .user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+body.formular_style .input-box input{
+  
+  height: 45px;
+  width:100%;
+  outline:none;
+  border-radius:5px;
+  border: 1px solid #ccc; 
+  border-bottom-width:2px ;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+body.formular_style form .gender-details .gender-title{
+  font-size:20px;
+  font-weight: 500;
+}
+
+body.formular_style form .gender-details .category{
+  display: flex;
+  width: 80%;
+  margin:14px 0;
+  
+}
+
+body.formular_style form .gender-details .category_drive{
+  display: flex;
+  width: 80%;
+  margin:14px 0;
+  
+}
+
+body.formular_style form .category label, .category_drive label{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+body.formular_style form .category label .dot, .category_drive label  .dot {
+  height:18px;
+  width: 18px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+}
+
+body.formular_style  .category_drive .radio-button{
+  margin-right: 2%;    
+}
+
+
+
+form .gender-details .category_drive input[type="radio"]:not(:first-of-type) {
+  margin-left: 5%; /* add a margin to the left side of the second radio button */
+}
+
+form .gender-details .category_drive  {
+  font-size: 110%; /* set the font size to 110% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*body.formular_style #dot-1:checked ~ .category label .one,
+body.formular_style #dot-2:checked ~ .category label .two,
+body.formular_style #dot-3:checked ~ .category label .three,
+body.formular_style #dot-4:checked ~ .category label .four,
+body.formular_style #dot-5:checked ~ .category label .five,
+body.formular_style #dot-6:checked ~ .category label .six,
+body.formular_style #dot-7:checked ~ .category label .seven,
+body.formular_style #dot-8:checked ~ .category_drive label .eight,
+body.formular_style #dot-9:checked ~ .category_drive label .nine,
+body.formular_style #dot-10:checked ~ .category label .ten,
+body.formular_style #dot-11:checked ~ .category label .eleven,
+body.formular_style #dot-12:checked ~ .category label .twelve,
+body.formular_style #dot-13:checked ~ .category label .thirteen,
+body.formular_style #dot-14:checked ~ .category label .fourteen,
+body.formular_style #dot-15:checked ~ .category label .fifteen,
+body.formular_style #dot-16:checked ~ .category label .sixteen,
+body.formular_style #dot-17:checked ~ .category label .seventeen,
+body.formular_style #dot-18:checked ~ .category label .eighteen,
+body.formular_style #dot-19:checked ~ .category label .nineteen,
+body.formular_style #dot-20:checked ~ .category label .twenty
+{
+border-color: #d9d9d9;
+background: #9b59b6;
+}*/
+
+/*body.formular_style form input[type="radio"]{
+display:none;
+}*/
+
+body.formular_style form .button{
+  height: 45px;
+  margin: 35px 0;
+}
+
+body.formular_style form .button button{
+  height:100%;
+  width:100%;
+  border:none;
+  border-radius: 5px;
+  outline:none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background:#71b7e6;
+}
+
+body.formular_style form.button input:hover{
+  background: linear-gradient(-135deg,#71b7e6,#9b59b6)
+}
+
+@media (max-width: 584px) {
+  .container{
+    max-width:100%;
+  }
+
+
+body.formular_style form .user-details .input-box{
+  margin-bottom:15px;
+  width:100%;
+}
+
+body.formular_style form  .category{
+  
+  width: 100%;
+}
+
+body.formular_style .container form .user-details{
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+body.formular_style .user-details::-webkit-scrollbar{
+ width: 5px;
+}
+}
+
+@media(max-width:459px){
+  body.formular_style .container .content .category{
+flex-direction: column;
+}
+}
+
+#Mon, #Day,#Time{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  padding-left: 15px;
+  font-size: 16px;
+
+}
+
